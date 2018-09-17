@@ -1,12 +1,10 @@
-Getting started guide
-=====================
-
-You should start with instalation process but let me postpone that.
-
 Instalation process
 ===================
 
-some stuff
+1. Download last version from https://github.com/Teggot/LearexDocs/releases.
+2. It's an archive so just run it in any empty folder.
+3. Add path to learex.exe into PATH.
+4. Create LEAREXHOME assing it a path to root folder of learex.
 
 Quick language guide
 ====================
