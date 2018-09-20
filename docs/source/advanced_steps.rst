@@ -29,7 +29,7 @@ Pointer is "$".
 Unpointer is "&"
 
 If you came from c-type languages then you should be familiar with pointers.
-There is a builtin "scanf" function which asks for pointer to the variable.::
+There is a ability to get pointer to var.::
 
     0 >> age;
     $age >> y;
