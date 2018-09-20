@@ -55,6 +55,9 @@ Also some stuff like importing modules::
 
     import func printf(string a, b):int32
 
+.. warning:: Now it's hard to control importing behaviour, so don't import module that imports another one.
+
+
 Functions
 ^^^^^^^^^
 
@@ -105,6 +108,17 @@ Also you can call function like this::
     calc(10, 20) >> out;
     # 30
 
+You can use "+>", "->", "*>", "/>" and their reversed versions::
+
+    0 >> int a;
+    10 +> a;
+    # a = 10
+    4 -> a;
+    # a = 6
+    # and so on
+
+.. note:: This feature appeared in 0.0.2
+
 Extending "put" context
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -113,13 +127,28 @@ Also you can add new arguments to your "put" context e.g.::
     10, 20 >> calc{2}, calc(10, 20) >> calc{2} >> out;
     # 60
 
+Dropping
+^^^^^^^^
+
+You can drop value from stack using "|>".::
+
+    10, 20 >> int a|>, int b >> out;
+    # 20
+
+.. note:: This feature appeared in 0.0.2.
+
+.. warning:: Use drop only if you are sure that function returns something. Variables drop well.
+
 Casting to types
 ^^^^^^^^^^^^^^^^
 
 you can cast variable to type::
 
-    age|&int8;
-    # age is casted to *int8;
+    age|double;
+    # age is casted to double;
+
+.. note:: This feature is almost repaired in 0.0.2.
+.. warning:: You can cast now only from int to double and back.
 
 
 If statements
@@ -159,9 +188,32 @@ I have prepeared some different loops e.g.::
     0 >> n;
     while n <= 10{
         n >> out;
-        n + 1 >> n;
+        1 +> n;
     }
 
+Classes
+^^^^^^^
+
+.. warning:: It's beta version of classes. No inheritance, no functions, just fields and constructor.
+.. note:: This feature appeared in 0.0.2.
+
+Classes can store fields::
+
+    class TwoInts{
+        int a;
+        int b;
+    }
+
+Each class has default constructor::
+
+    10, 50 >> TwoInts{2} >> ints;
+
+Accessing fields (will be more usual later)::
+
+    ints[0] >> out;
+    # 10
+    ints[1] >> out;
+    # 50
 
 Next steps
 ==========
