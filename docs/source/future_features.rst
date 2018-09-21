@@ -16,7 +16,7 @@ Comming soon.
 New take ops
 ^^^^^^^^^^^^
 
-.. note:: I have already done it.
+.. note:: Im version 0.0.2.
 
 operators "<+", "<-", "<*", "</".::
 
