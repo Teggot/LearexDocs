@@ -1,8 +1,23 @@
 Future features
 ===============
 
+OOP
+^^^
+
+object oriented programming features, such as classes and their functions.
+
+.. note:: Classes with fields are ready.
+
+
+Other features
+^^^^^^^^^^^^^^
+
+Comming soon.
+
 New take ops
 ^^^^^^^^^^^^
+
+.. note:: In version 0.0.2.
 
 operators "<+", "<-", "<*", "</".::
 
@@ -12,13 +27,3 @@ operators "<+", "<-", "<*", "</".::
     age <+ 1;
     age >> out;
     # 11
-
-OOP
-^^^
-
-object oriented programming features, such as classes and their functions.
-
-Other features
-^^^^^^^^^^^^^^
-
-Comming soon.

@@ -25,19 +25,17 @@ Also you have an access to builtin low-level operators::
 Pointers
 ^^^^^^^^
 
-Pointer is "&".
+Pointer is "$".
+Unpointer is "&"
 
 If you came from c-type languages then you should be familiar with pointers.
-Learex provides ability to get pointers to types and pointers to variables address.::
-
-    func calc(&int8 a){
-        return << #operations with a#;
-    }
-
-There is a builtin "scanf" function which asks for pointer to the variable.::
+There is a ability to get pointer to var.::
 
     0 >> age;
-    scanf("%i", &age);
-    age >> out;
-    # here will be your inputted integer
- 
+    $age >> y;
+    &y >> out;
+    # 0
+    100 >> age;
+    &y >> out;
+    # 100
+    

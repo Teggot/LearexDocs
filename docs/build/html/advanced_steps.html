@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Advanced steps &#8212; LearexLang 0.0.1 documentation</title>
+    <title>Advanced steps &#8212; LearexLang 0.0.2 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Future features" href="future_features.html" />
-    <link rel="prev" title="Getting started guide" href="getting_started.html" />
+    <link rel="prev" title="Instalation process" href="getting_started.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -57,19 +57,17 @@ This may be useful to create behaviour of operators when you want to get sum of 
 </div>
 <div class="section" id="pointers">
 <h2>Pointers<a class="headerlink" href="#pointers" title="Permalink to this headline">¶</a></h2>
-<p>Pointer is “&amp;”.</p>
+<p>Pointer is “$”.
+Unpointer is “&amp;”</p>
 <p>If you came from c-type languages then you should be familiar with pointers.
-Learex provides ability to get pointers to types and pointers to variables address.:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">func</span> <span class="n">calc</span><span class="p">(</span><span class="o">&amp;</span><span class="n">int8</span> <span class="n">a</span><span class="p">){</span>
-    <span class="k">return</span> <span class="o">&lt;&lt;</span> <span class="c1">#operations with a#;</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p>There is a builtin “scanf” function which asks for pointer to the variable.:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="o">&gt;&gt;</span> <span class="n">age</span><span class="p">;</span>
-<span class="n">scanf</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%i</span><span class="s2">&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">age</span><span class="p">);</span>
-<span class="n">age</span> <span class="o">&gt;&gt;</span> <span class="n">out</span><span class="p">;</span>
-<span class="c1"># here will be your inputted integer</span>
+There is a ability to get pointer to var.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>0 &gt;&gt; age;
+$age &gt;&gt; y;
+&amp;y &gt;&gt; out;
+# 0
+100 &gt;&gt; age;
+&amp;y &gt;&gt; out;
+# 100
 </pre></div>
 </div>
 </div>
@@ -93,8 +91,7 @@ Learex provides ability to get pointers to types and pointers to variables addre
 
 <h3>Navigation</h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html#instalation-process">Instalation process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Instalation process</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html#quick-language-guide">Quick language guide</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="getting_started.html#next-steps">Next steps</a></li>
 </ul>
@@ -103,8 +100,8 @@ Learex provides ability to get pointers to types and pointers to variables addre
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-  <li><a href="getting_started.html">Getting started guide</a><ul>
-      <li>Previous: <a href="getting_started.html" title="previous chapter">Getting started guide</a></li>
+  <li><a href="getting_started.html">Instalation process</a><ul>
+      <li>Previous: <a href="getting_started.html" title="previous chapter">Instalation process</a></li>
       <li>Next: <a href="future_features.html" title="next chapter">Future features</a></li>
   </ul></li>
   </ul></li>
