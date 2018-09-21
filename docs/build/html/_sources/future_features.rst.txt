@@ -5,6 +5,7 @@ OOP
 ^^^
 
 object oriented programming features, such as classes and their functions.
+
 .. note:: Classes with fields are ready.
 
 
@@ -16,7 +17,7 @@ Comming soon.
 New take ops
 ^^^^^^^^^^^^
 
-.. note:: I have already done it.
+.. note:: In version 0.0.2.
 
 operators "<+", "<-", "<*", "</".::
 

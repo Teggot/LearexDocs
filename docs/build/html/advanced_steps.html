@@ -57,19 +57,17 @@ This may be useful to create behaviour of operators when you want to get sum of 
 </div>
 <div class="section" id="pointers">
 <h2>Pointers<a class="headerlink" href="#pointers" title="Permalink to this headline">¶</a></h2>
-<p>Pointer is “&amp;”.</p>
+<p>Pointer is “$”.
+Unpointer is “&amp;”</p>
 <p>If you came from c-type languages then you should be familiar with pointers.
-Learex provides ability to get pointers to types and pointers to variables address.:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">func</span> <span class="n">calc</span><span class="p">(</span><span class="o">&amp;</span><span class="n">int8</span> <span class="n">a</span><span class="p">){</span>
-    <span class="k">return</span> <span class="o">&lt;&lt;</span> <span class="c1">#operations with a#;</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p>There is a builtin “scanf” function which asks for pointer to the variable.:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="o">&gt;&gt;</span> <span class="n">age</span><span class="p">;</span>
-<span class="n">scanf</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%i</span><span class="s2">&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">age</span><span class="p">);</span>
-<span class="n">age</span> <span class="o">&gt;&gt;</span> <span class="n">out</span><span class="p">;</span>
-<span class="c1"># here will be your inputted integer</span>
+There is a ability to get pointer to var.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>0 &gt;&gt; age;
+$age &gt;&gt; y;
+&amp;y &gt;&gt; out;
+# 0
+100 &gt;&gt; age;
+&amp;y &gt;&gt; out;
+# 100
 </pre></div>
 </div>
 </div>
